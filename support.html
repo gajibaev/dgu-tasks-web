@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taska - Поддержка</title>
+    <style>
+        :root {
+            --primary: #30AAFF;
+            --secondary: #30AAFF;
+            --accent: #4895ef;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 44px;
+            margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+        }
+
+        .logo i {
+            color: white;
+            font-size: 40px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            color: var(--dark);
+            opacity: 0.8;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--secondary);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .faq-answer {
+            color: #555;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(67, 97, 238, 0.4);
+        }
+
+        .contact-info {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--dark);
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="icon-512.png" alt=""/>
+            <h1>Taska</h1>
+            <p class="subtitle">Управляйте задачами в команде легко и эффективно</p>
+        </header>
+
+        <div class="card">
+            <h2><i class="fas fa-question-circle" style="margin-right: 10px;"></i>Часто задаваемые вопросы</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Как создать группу для совместной работы?</div>
+                <div class="faq-answer">
+                    Перейдите на экран "Группы" и нажмите "Создать свою". Пригласите участников отправив им
+                    код, который они должны ввести в приложении.
+                    После принятия приглашения они смогут видеть и редактировать задачи группы.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Можно ли назначить задачу другому участнику?</div>
+                <div class="faq-answer">
+                    Да, при создании или редактировании задачи вы можете выбрать ответственного из списка участников
+                    вашей группы.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Как работает синхронизация между устройствами?</div>
+                <div class="faq-answer">
+                    Все изменения автоматически синхронизируются в реальном времени при наличии интернет-соединения.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Есть ли ограничения на количество участников в группе?</div>
+                <div class="faq-answer">
+                    Количество участников в группах неограниченно.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-envelope" style="margin-right: 10px;"></i>Свяжитесь с нами</h2>
+            <p>Не нашли ответ на свой вопрос? Наша команда поддержки всегда готова помочь вам.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+79034808322">+7 (903) 480-83-22</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:brotherf.dev@gmail.com">brotherf.dev@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-message"></i>
+                    <a href="https://t.me/alibekdev">Telegram</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Taska. Все права защищены.</p>
+            <p><a href="privacy.html" style="color: var(--accent);">Политика конфиденциальности</a>
+        </footer>
+    </div>
+</body>
+
+</html>
